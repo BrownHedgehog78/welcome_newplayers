@@ -14,7 +14,7 @@ minetest.register_chatcommand("welcome_msg", {
 			"button[4.6,2.4;3,0.9;welcome_msg_hud_button;HUD]" ..
 			"label[2.4,4.1;Edit Welcome Message]" ..
 			"field[0.2,4.5;8.5,0.8;welcome_msg_field;;]" ..
-			"button[4.7,5.7;3,0.9;save_button;Save]" ..
+			"button_exit[4.7,5.7;3,0.9;save_button;Save]" ..
 			"button_exit[0.7,5.7;3,0.9;cancel_button_exit;Cancel]"
 		}
 		minetest.show_formspec(name, "welcome_newplayers:editor", table.concat(formspec, ""))
