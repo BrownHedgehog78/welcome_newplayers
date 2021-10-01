@@ -24,7 +24,7 @@ minetest.register_chatcommand("welcome_msg", {
 minetest.register_on_newplayer(function(player)
 	local name = player:get_player_name()
 	minetest.after(2.5, function()
-		if welcome_format == "hud" then
+		if welcome_pos == "hud" then
 			welcome_hud = player:hud_add({
 				hud_elem_type = "text",
 				position = {x = 0.5, y = 0.5},
